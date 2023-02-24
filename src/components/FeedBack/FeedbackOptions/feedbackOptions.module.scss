@@ -1,0 +1,43 @@
+.list {
+  width: 250px;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+  &:active {
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+      rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+
+  &.good {
+    &:active {
+      color: green;
+    }
+  }
+
+  &.neutral {
+    &:active {
+      color: orange;
+    }
+  }
+
+  &.bad {
+    &:active {
+      color: red;
+    }
+  }
+}
